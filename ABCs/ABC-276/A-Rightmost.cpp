@@ -38,12 +38,8 @@ void solve()
 	else cout << -1 << endl;
 }
 
-/*--Execution Time--*/
-void execTime() {cerr << "time taken : " << (float)clock() / CLOCKS_PER_SEC << " secs" << endl;}
-
 signed main()
 {
-	clock_t begin = clock();
 	fastio;
 
 	int t = 1;
@@ -52,11 +48,6 @@ signed main()
 	{
 		solve();
 	}
-
-	clock_t end = clock();
-	cout << "\n\nExecuted In: " << double(end - begin) / CLOCKS_PER_SEC << " secs" << endl;
-
-	execTime();
 
 	return 0;
 }
